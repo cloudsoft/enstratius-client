@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>io.cloudsoft.enstratius</groupId>
+        <artifactId>enstratius-client</artifactId>
+        <version>0.1.0-SNAPSHOT</version>
+    </parent>
+    <groupId>io.cloudsoft.enstratius</groupId>
+    <artifactId>enstratius-java-client</artifactId>
+    <version>0.1.0-SNAPSHOT</version>
+    <name>Enstratius Client</name>
+    <description>Java client library for Enstratius REST API</description>
+    <packaging>bundle</packaging>
+
+    <properties>
+        <test.enstratius.endpoint>https://api.enstratius.com</test.enstratius.endpoint>
+        <test.enstratius.version>2012-06-15</test.enstratius.version>
+        <test.enstratius.identity>4.2.6</test.enstratius.identity>
+        <test.enstratius.credential>4.2.6</test.enstratius.credential>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <slf4jVersion>1.6.1</slf4jVersion>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.0.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.0.6</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>13.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>${slf4jVersion}</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.16</version>
+            <scope>runtime</scope>
+        </dependency>
+    </dependencies>
+
+</project>
